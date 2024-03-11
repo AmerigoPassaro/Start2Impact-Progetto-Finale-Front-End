@@ -3,6 +3,8 @@
     padding: 0px;
 
     font-family: Arial;
+
+    scroll-behavior: smooth;
 }
 
 html, body, header, main{
@@ -36,3 +38,17 @@ nav{
     background-color: cadetblue;
 }
 
+main{
+    background-color: salmon;
+}
+
+.menu-item{
+    width: 20px;
+    height: 20px;
+
+    margin: 0px 10px;
+    border: 0px;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
