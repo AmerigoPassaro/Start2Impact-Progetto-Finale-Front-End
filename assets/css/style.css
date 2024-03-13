@@ -9,6 +9,7 @@
 
 html, body, header, main{
     height: 100%;
+
 }
 
 header{
@@ -30,8 +31,8 @@ header::before{
 nav{
     position: fixed;
     bottom: 0px;
-    left: 50%;
-
+    left: 45%;
+ 
     padding: 30px;
     border-radius: 20px 20px 0px 0px;
 
@@ -44,7 +45,7 @@ main{
     flex-direction: column;
     align-items: center;
 
-    padding: 50px 0px;
+    padding-top: 100px;
 
     background-color: salmon;
     

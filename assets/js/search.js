@@ -7,42 +7,57 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 });
 
+// Creazione Form e Contenuto
+    let searchForm = document.createElement('form');
+        let placeSelect = document.createElement('input');
+            let placeList = document.createElement('datalist');
+        let startDate = document.createElement('input');
+        let endDate = document.createElement('input');
+        let searchButton = document.createElement('input');
 
-let searchForm = document.createElement('form');
-let placeSelect = document.createElement('select');
-let startDate = document.createElement('input');
-let endDate = document.createElement('input');
-let searchButton = document.createElement('input');
-let prova = document.createElement('button');
 
-searchForm.setAttribute('id', 'search-form');
-placeSelect.setAttribute('id', 'place-select');
-startDate.setAttribute('type', 'date');
-startDate.setAttribute('id', 'start-date');
-startDate.setAttribute('class', 'place-date');
-endDate.setAttribute('type', 'date');
-endDate.setAttribute('id', 'end-date');
-endDate.setAttribute('class', 'place-date');
-searchButton.setAttribute('type', 'submit');
-searchButton.setAttribute('id', 'search-button');
-prova.setAttribute('onclick', 'search()');
+// Attributi Form Search
+    searchForm.setAttribute('id', 'search-form');
+// Attributi Select Place
+    placeSelect.setAttribute('type', 'search');
+    placeSelect.setAttribute('id', 'place-select');
+    placeSelect.setAttribute('list', 'place-list');
+// Attributo List Place
+    placeList.setAttribute('id', 'place-list');
+// Attributi Input Start Date
+    startDate.setAttribute('type', 'date');
+    startDate.setAttribute('id', 'start-date');
+    startDate.setAttribute('class', 'place-date');
+// Attributi Input End Date
+    endDate.setAttribute('type', 'date');
+    endDate.setAttribute('id', 'end-date');
+    endDate.setAttribute('class', 'place-date');
+// Attributi Submit Search
+    searchButton.setAttribute('type', 'submit');
+    searchButton.setAttribute('id', 'search-button');
 
-prova.innerHTML = "Prova";
 
-document.body.querySelector('main').append(searchForm);
-document.body.querySelector('#search-form').prepend(placeSelect);
+// Inserimento Form
+    document.body.querySelector('main').append(searchForm);
+// Inserimento Contenuto Form  1/2  
+    document.body.querySelector('#search-form').prepend(placeSelect);
+    document.body.querySelector('#place-select').after(placeList);
 
-for(let i = 0; i < arr.length; i++){
-    let placeOption = document.createElement('option');
-    placeOption.setAttribute('value', `${arr[i]}`);
-    placeOption.innerHTML = `${arr[i]}`;
-    document.body.querySelector('#place-select').append(placeOption);
-}
+// Inserimento Voci Lista
+    fetch('https://api.v2.emissions-api.org/api/v2/countries.json')
+    .then(response => response.json())
+    .then(commits => { 
+        for (let i = 0; i < Object.keys(commits).length; i++){
+            let placeOption = document.createElement('option');
+            placeOption.setAttribute('value', `${Object.values(commits)[i]}`);
+            document.body.querySelector('#place-list').append(placeOption);
+        }
+    });
 
-document.body.querySelector('#place-select').after(startDate);
-document.body.querySelector('#start-date').after(endDate);
-document.body.querySelector('#end-date').after(searchButton);
-document.body.querySelector('#search-button').after(prova);
+// Inserimento Contenuto Form  2/2 
+    document.body.querySelector('#place-list').after(startDate);
+    document.body.querySelector('#start-date').after(endDate);
+    document.body.querySelector('#end-date').after(searchButton);
 
 
 
