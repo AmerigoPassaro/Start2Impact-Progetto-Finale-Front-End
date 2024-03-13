@@ -14,6 +14,11 @@ html, body, header, main{
 
 header{
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 header::before{
@@ -87,5 +92,47 @@ main{
     font-size: 20px;
 
     background-color: rgba(255,255,255, 0.5);
+
+}
+
+#container-title{
+    width:fit-content;
+    position: absolute;
+
+    opacity: 0.75;
+}
+
+h1{
+    line-height: 3.5em;
+    text-align: center;
+
+    opacity: 1;
+}
+
+h2{
+    position: absolute;
+    right: 0px;
+    margin-top: 50px;
+    padding-right: 1em;
+
+    font-family: Manrope;
+    font-size: 33px;
+    letter-spacing: 1.33em;
+}
+
+
+#world{
+    display: block;
+
+    font-family: Manrope;
+    font-size: 50px;
+    letter-spacing: 1.5em;
+}
+
+#emissions{
+    display: block;
+    font-family: Yeseva One;
+    font-size: 200px;
+    letter-spacing: 0.33em;
 
 }
