@@ -1,5 +1,3 @@
-
-
 // Eliminazione comportamento base form ed Inserimento nuovo comportamento
     document.addEventListener('DOMContentLoaded', function(){
         document.forms[0].addEventListener('submit', function(e){
@@ -49,7 +47,7 @@
         }
     });
 
-    let date = ['start', 'end'];
+    let date = ['end', 'start'];
     date.forEach(
         function dates(elem,ind,arr){
             // Creazione Date
