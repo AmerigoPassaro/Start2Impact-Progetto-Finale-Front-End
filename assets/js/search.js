@@ -10,6 +10,11 @@
     let searchForm = document.createElement('form');
         let placeSelect = document.createElement('input');
             let placeList = document.createElement('datalist');
+        let containerLL = document.createElement('div');
+            let lon1 = document.createElement('input');
+            let lat1 = document.createElement('input');
+            let lon2 = document.createElement('input');
+            let lat2 = document.createElement('input');
         let searchButton = document.createElement('input');
 
 // Attributi Form Search
@@ -20,6 +25,13 @@
     placeSelect.setAttribute('list', 'place-list');
 // Attributo List Place
     placeList.setAttribute('id', 'place-list');
+// Attributi Container Longitudine Latitudine
+    containerLL.setAttribute('id', 'container-lon-lat');
+// Attributi Input Lon e Lat
+    lon1.setAttribute('class', 'coordinates-input');
+    lat1.setAttribute('class', 'coordinates-input');
+    lon2.setAttribute('class', 'coordinates-input');
+    lat2.setAttribute('class', 'coordinates-input');
 // Attributi Submit Search
     searchButton.setAttribute('type', 'submit');
     searchButton.setAttribute('id', 'search-button');
@@ -28,7 +40,7 @@
 // Inserimento Form
     document.body.querySelector('main').append(searchForm);
 // Inserimento Contenuto Form  1/2
-    searchForm.insertAdjacentElement('beforeend', placeSelect);
+    searchForm.insertAdjacentElement('afterbegin', placeSelect);
     document.body.querySelector('#place-select').after(placeList);
     searchForm.insertAdjacentElement('beforeend', searchButton);
 
@@ -68,6 +80,7 @@
                 var elem = document.createElement('input');
             // Inserimento attributi Opzione
                 eval(elem).setAttribute('type', 'radio');
+                eval(elem).setAttribute('id', ind);
                 eval(elem).setAttribute('name', 'emissions');
                 eval(elem).setAttribute('value', `${arr[ind]}`);
             // Inserimento Opzione nella pagina
@@ -75,7 +88,7 @@
         }   
     );
 
-    let etichetta = ['country', 'start date', 'end date', 'methane', 'carbonmonoxide', 'ozone', 'nitrogendioxide'];
+    let etichetta = ['contry', 'start date', 'end date', 'methane', 'carbonmonoxide', 'ozone', 'nitrogendioxide'];
     etichetta.forEach(
         function etichette(elem,ind,arr){
             // Creazione Label

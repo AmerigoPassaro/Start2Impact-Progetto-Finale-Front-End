@@ -2,14 +2,13 @@
     margin: 0px;
     padding: 0px;
 
-    font-family: Arial;
+    font-family: Manrope;
 
     scroll-behavior: smooth;
 }
 
 html, body, header, main{
     height: 100%;
-
 }
 
 
@@ -49,9 +48,3 @@ main{
     cursor: pointer;
 }
 
-h3{
-
-    font-family: Manrope;
-    font-size: 33px;
-
-}
