@@ -5,10 +5,12 @@
     let emissions = document.createElement('span');
     let subTitle = document.createElement('h2');
 
+    
 // Inserimento testo nel Titolo
     world.innerHTML = 'world'.toUpperCase();
     emissions.innerHTML = 'emissions';
     subTitle.innerHTML = 'statistics'.toUpperCase();
+
 
 // Attributi degli elementi
     containerTitle.setAttribute('id', 'container-title');

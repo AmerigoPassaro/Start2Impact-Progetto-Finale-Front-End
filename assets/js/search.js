@@ -38,7 +38,7 @@
     searchButton.setAttribute('value', 'Search');
     
 // Inserimento Form
-    document.body.querySelector('main').append(searchForm);
+    document.body.querySelector('#search-section').append(searchForm);
 // Inserimento Contenuto Form  1/2
     searchForm.insertAdjacentElement('afterbegin', placeSelect);
     document.body.querySelector('#place-select').after(placeList);

@@ -8,7 +8,7 @@ function search(){
         let endDate = document.querySelector('#end-date').value; 
         let emissionSelect = document.querySelector('input[name="emissions"]:checked');
 
-        document.querySelector('main').innerHTML = "";
+        document.querySelector('#search-section').innerHTML = "";
 
     // Creazione Dashboard
         let dashboard = document.createElement('div');
@@ -19,7 +19,7 @@ function search(){
     // Attributi Dashboard
         dashboard.setAttribute('id', 'dashboard');
     // Inserimento Dashboard
-        document.body.querySelector('main').append(dashboard);
+        document.body.querySelector('#search-section').append(dashboard);
         document.body.querySelector('#dashboard').prepend(placeTitle);
 
     // Link di collegamento

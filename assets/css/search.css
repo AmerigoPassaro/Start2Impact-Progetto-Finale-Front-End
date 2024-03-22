@@ -1,3 +1,7 @@
+#search-section{
+    margin-top: 50px;
+}
+
 #search-form, #dashboard{
     width: 500px;
 
@@ -6,21 +10,21 @@
     align-items: center;
 
     border-radius: 20px;
-    padding: 20px;
+    padding: 16px;
 
     background-color: rgba(255,255,255, 0.5);
 }
 
-#place-select, .place-date, #search-button, .coordinates-input{
+#place-select, .place-date, #search-button, .coordinates-input, #change-button{
     width: 400px;
 
     margin-bottom: 25px;
     border-radius: 20px;
     border: 0px;
-    padding: 20px;
+    padding: 16px;
 
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 
     background-color: rgba(255,255,255, 0.5);
 }

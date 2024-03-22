@@ -1,13 +1,12 @@
-let header = document.createElement('header');
-document.body.prepend(header);
+let parts = ['header', 'nav', 'main', 'footer'];
+parts.forEach(
+    function part(elem,ind,arr){
+        // Creazione Label
+            var elem = document.createElement(`${elem}`);
+        // Inserimento Label nella pagina
+            document.body.append(elem);
+    }   
+);
 
-let nav = document.createElement('nav');
-document.body.append(nav);
-
-let main = document.createElement('main');
-document.body.append(main);
-
-let footer = document.createElement('footer');
-document.body.append(footer);
 
 let controllo = true;
