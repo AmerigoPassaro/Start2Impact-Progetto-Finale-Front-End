@@ -1,4 +1,4 @@
-let sections = ['search'];
+let sections = ['search', 'graphic'];
 sections.forEach(
     function section(elem,ind,arr){
         // Creazione Section

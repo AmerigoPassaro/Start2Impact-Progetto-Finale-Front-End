@@ -1,5 +1,6 @@
-#search-section{
+section{
     margin-top: 50px;
+
 }
 
 #search-form, #dashboard{
@@ -9,6 +10,7 @@
     flex-direction: column;
     align-items: center;
 
+    margin-bottom: 50px;
     border-radius: 20px;
     padding: 16px;
 

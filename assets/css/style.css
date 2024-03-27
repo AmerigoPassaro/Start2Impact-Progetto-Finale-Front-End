@@ -7,11 +7,12 @@
     scroll-behavior: smooth;
 }
 
-html, body, header, main{
+html, body, header, main, section{
     height: 100%;
+    width: 100%;
 }
 
-main{
+main, section{
 
     display: flex;
     flex-direction: column;

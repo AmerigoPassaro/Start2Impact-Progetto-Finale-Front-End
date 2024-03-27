@@ -51,5 +51,5 @@ function search(){
             document.body.querySelector('h4').after(emissionDes);
         });
         
-
+        emissionChart();
     }
