@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Start2Impact-Progetto-Finale-Front-End/static/css/main.d9179602.css",
+    "main.js": "/Start2Impact-Progetto-Finale-Front-End/static/js/main.e5154a3d.js",
+    "static/js/787.6c138547.chunk.js": "/Start2Impact-Progetto-Finale-Front-End/static/js/787.6c138547.chunk.js",
+    "static/media/bg.jpg": "/Start2Impact-Progetto-Finale-Front-End/static/media/bg.fdfd45aa8a4bb8a1fb53.jpg",
+    "static/media/bg2.jpg": "/Start2Impact-Progetto-Finale-Front-End/static/media/bg2.eb2beca29b93eb09589e.jpg",
+    "index.html": "/Start2Impact-Progetto-Finale-Front-End/index.html",
+    "main.d9179602.css.map": "/Start2Impact-Progetto-Finale-Front-End/static/css/main.d9179602.css.map",
+    "main.e5154a3d.js.map": "/Start2Impact-Progetto-Finale-Front-End/static/js/main.e5154a3d.js.map",
+    "787.6c138547.chunk.js.map": "/Start2Impact-Progetto-Finale-Front-End/static/js/787.6c138547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9179602.css",
+    "static/js/main.e5154a3d.js"
+  ]
+}
