@@ -20,7 +20,7 @@ section{
     background-color: rgba(255,255,255, 0.5);
 }
 
-#place-select, .place-date, #search-button, .coordinates-input, #change-button, #show-chart{
+#place-select, .place-date, #search-button, .coordinates-input, #change-button{
     width: 400px;
 
     margin-bottom: 25px;
@@ -32,6 +32,10 @@ section{
     font-size: 16px;
 
     background-color: rgba(255,255,255, 0.5);
+}
+
+#search-button, #change-button{
+    background-color: rgba(96, 128, 255, 0.5);
 }
 
 .search-label{
